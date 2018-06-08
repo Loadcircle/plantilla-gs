@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="js/vendor/waypoints/lib/noframework.waypoints.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Menu vertical -->
+    <div class="menu-vertical">
+        <ul>
+            <li><a href="#contacto">Contacto    <img class="imagen-vertical contacto-active" src="image/arrow.svg" alt=""></a></li>
+            <li><a href="#convenio">Convenios   <img class="imagen-vertical convenio-active" src="image/arrow.svg" alt=""></a></li>
+            <li><a href="#historia">Historia    <img class="imagen-vertical historia-active" src="image/arrow.svg" alt=""></a></li>
+            <li><a href="#servicio">Marcas      <img class="imagen-vertical servicio-active" src="image/arrow.svg" alt=""></a></li>
+            <li><a href="#nosotros">Nosotros    <img class="imagen-vertical nosotros-active" src="image/arrow.svg" alt=""></a></li>
+        </ul>
+    </div>
+    <!-- Menu vertical -->
+
+    <!-- flecha arriba -->
+    <div class="flecha-arriba">
+        <a href="#top"><img src="image/up-arrow.svg" alt=""></a> 
+    </div>
+    <!-- flecha arriba -->
+
+    <!-- wrap -->
+    <div class="wrap"> 
+
+        <!-- Barra superior de colores -->
+        <div class="top-colores" id="top">
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+        </div>
+        <!-- fin barra colores -->
+
+        <!-- inicio del nav superior -->
+        <nav id="menu" class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#"><img src="image/logo1.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#nosotros">Nosotros</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#servicio">Marcas</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#historia">Historia</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#convenio">Convenios</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- fin del nav superior -->
+
+        <!-- Inicio del carousel -->
+        <span id="inicio"></span> <!-- para remover el menu -->
+        <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img class="d-block w-100" src="image/banner1.jpg" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Un holding de marcas Peruanas</h1>
+                        <a href="#nosotros"><img src="image/arrow2.svg" alt="flecha abajo"></a>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="image/banner2.jpg" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Un holding de marcas Peruanas</h1>
+                        <a href="#nosotros"><img src="image/arrow2.svg" alt="flecha abajo"></a>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img class="d-block w-100" src="image/banner3.jpg" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>Un holding de marcas Peruanas</h1>
+                        <a href="#nosotros"><img src="image/arrow2.svg" alt="flecha abajo"></a>
+                      </div>
+                  </div> 
+                </div>
+        </div>
+        <!-- fin del carousel -->
+        
+        <!-- Seccion de nosotros -->
+        <span id="nosotros"></span>
+        <div class="row container-fluid nosotros">
+            <div class="col-md-6 flex-nosotros">
+                <div class="ml ">
+                    <h1>Misión:</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, accusamus omnis! Provident, consectetur eius non nisi eos id voluptatem quidem. Architecto earum assumenda at dolores magnam illum expedita excepturi. Autem?</p>
+                    <h1>Visión</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet assumenda, commodi alias similique voluptatum placeat exercitationem hic incidunt sint perferendis dolore quo nobis, tenetur ut vitae eos reiciendis velit praesentium.</p>
+                </div>       
+            </div>
+            <div class="col-md-6">
+                <img class="edificio img-fluid" src="image/edificio.png" alt="edificio">
+            </div>
+        </div>
+        <!-- Seccion de nosotros -->
+
+        <!-- Servicios -->
+        <span id="servicio"></span>
+        <div class="servicio">
+            <div class="text-center my-5">
+                <h1>Unidades del negocio</h1>
+            </div>      
+
+            <div class="display-flex marca-1">       
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante marca-1"></div>
+                        <div class="atras">
+                            <div class="row" style="margin-top: 220px;">
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <a href="#"><img width="50px" src="image/home.svg" alt="icono-home"></a>
+                                </div>
+                                <div class="col-md-6 col-sm-6 col-6">
+                                    <a href="#"><img width="50px" src="image/fb.svg" alt="icono-facebook"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante marca-1"></div>
+                        <div class="atras"></div>
+                    </div>
+                </div>
+                <div class="tarjeta-wrap">
+                    <div class="tarjeta">
+                        <div class="adelante marca-1"></div>
+                        <div class="atras"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="display-flex marca-2">       
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante marca-1"></div>
+                            <div class="atras"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante marca-1"></div>
+                            <div class="atras"></div>
+                        </div>
+                    </div>
+                    <div class="tarjeta-wrap">
+                        <div class="tarjeta">
+                            <div class="adelante marca-1"></div>
+                            <div class="atras"></div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!-- Servicios -->
+        
+        <!-- Linea de tiempo -->
+        <span id="historia"></span>
+        <div class="my-5 l-tiempo">                
+        </div>
+        <!-- Linea de tiempo -->
+
+        <!-- Convenios -->
+        <span id="convenio"></span>
+        <div class="convenio my-5 text-center">
+            <h1>Auspiciadores</h1>
+            <div class="display-flex my-5">
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/consorcio_ferial_peru.png" alt="">
+                    </div>
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/cesar_vallejo.png" alt="">
+                    </div>
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/up.png" alt="">
+                    </div>
+            </div>
+            <div class="display-flex my-5">
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/franquicias_arg.png" alt="">
+                    </div>
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/finanzas_estructuradas.png" alt="">
+                    </div>
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/grupo_americano_franquicias.png" alt="">
+                    </div>
+            </div>
+            <div class="display-flex my-5">
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/consorcio_ferial_peru.png" alt="">
+                    </div>
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/cesar_vallejo.png" alt="">
+                    </div>
+                    <div class="logo-auspicio">
+                        <img src="image/auspicios/up.png" alt="">
+                    </div>
+            </div>
+        </div>
+        <!-- Convenios -->
+
+        <!-- Contacto -->
+        <span id="contacto"></span>
+        <div class="contacto my-5">
+            <div class="row">
+                <div class="col-md-5 col-sm-12 col-xs-12 my-5">
+                    <img class="img-fluid" src="image/contacto.jpg" alt="contacto">
+                </div>
+                <div class="col-md-7 col-sm-12 col-xs-12">
+                    <h1>Contáctanos</h1>            
+                    <form method="post" name="contacto" onsubmit="sendMail()">
+                        <div class="form-group row">
+                            <label for="nombre" class="col-sm-2 col-form-label">Nombre: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="nombre" name="nombre" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="apellido" class="col-sm-2 col-form-label">Apellido: </label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="apellido" name="apellido" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="telefono" class="col-sm-2 col-form-label">Telefono: </label>
+                            <div class="col-sm-10">
+                                <input type="tel" class="form-control" id="telefono" name="telefono" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Correo: </label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" name="email" >
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="mensaje" class="col-sm-2 col-form-label">Mensaje: </label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="mensaje" name="mensaje" rows="3" ></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <span class="col-sm-2"></span>
+                            <div class="col-sm-10">
+                                <button type="submit" class="btn btn-enviar">Enviar</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Contacto -->
+        <div class="alerta" id="alerta"></div>
+        <!-- empresario de footer -->
+        <img class="empresario" src="image/alexis.png" alt="empresario">  
+
+        <!-- Barra inferior de colores -->
+        <div class="bot-colores" id="bot">
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+            <div class="col-colores"></div>
+        </div>
+        <!-- fin barra colores -->
+
+        <footer class="footer py-3">
+            <div class="row my-5">
+                <div class="col-md-4 text-center">
+                    <img src="image/logo2.png" alt="">
+                </div>
+                <div class="col-md-4">
+                    <h1>Sigue navegando</h1>
+                    <ul>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#servicio">Unidades de negocio</a></li>
+                        <li><a href="#historia">Nuestra historia</a></li>
+                        <li><a href="#convenio">Convenios</a></li>
+                        <li><a href="#contacto">Contáctanos</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h1>Te puede interesar</h1>
+                    <ul>
+                        <li><a href="http://pmktconsulting.com">www.pmktconsulting.com</a></li>
+                        <li><a href="https://clubfranquicia.com">www.clubfranquicia.com</a></li>
+                        <li><a href="http://happyfactory.pe">www.happyfactory.pe</a></li>
+                        <li><a href="http://www.miboda.com.pe">www.miboda.com.pe</a></li>
+                        <li><a href="http://feriafranquiciasperu.com">www.feriafranquicias.com</a></li>
+                        <li><a href="https://agcproducciones.com">www.agcproducciones.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <h5 class="text-center">2018 Copyright: <a href="http://garrostucchi.com/">garrostucchi.com</a></h5>
+        </footer>
+
+    </div> 
+    <!-- fin del wrap -->
+
+    <script>
+         function sendMail(){            
+             if (window.XMLHttpRequest) {
+             // code for IE7+, Firefox, Chrome, Opera, Safari
+             xmlhttp = new XMLHttpRequest();
+             } else {
+                 // code for IE6, IE5
+                 xmlhttp = new ActiveXObject("Microsoft.XMLHTTP");
+             }
+             //variable=document.nombre_del_form.nombre_del_control.value
+             nombre=document.contacto.nombre.value;
+             apellido=document.contacto.apellido.value;
+             telefono=document.contacto.telefono.value;
+             email=document.contacto.email.value;        
+             mensaje=document.contacto.mensaje.value;
+            console.log(nombre);
+
+             xmlhttp.onreadystatechange = function() {
+             if (this.readyState == 4 && this.status == 200) {
+                 document.getElementById("alerta").innerHTML = this.responseText;
+             }
+             };
+             xmlhttp.open("POST","php/sendmail.php", true);
+             xmlhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+             xmlhttp.send("nombre="+nombre+"&apellido="+apellido+"&telefono="+telefono+"&email="+email+"&mensaje="+mensaje);
+
+         }
+
+    </script>
+
+    <script src="js/funciones.js"></script>
+    <!-- Plantilla desarrollada por: Jesús Milano y María Pía de Jesús -->
+</body>
+</html>
